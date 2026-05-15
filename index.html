@@ -17,6 +17,197 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- JSON-LD uses only on-page data and verified outbound store/contact details. -->
+    <!-- TODO: Confirm whether the legal organization should stay VapersMadrid.es or be aligned to ElVapero across site branding, contacts, and store URLs. -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "OnlineStore",
+                    "@id": "https://vapersmadrid.es/#organization",
+                    "name": "VapersMadrid.es",
+                    "url": "https://vapersmadrid.es/",
+                    "logo": "https://vapersmadrid.es/favicon-96x96.png",
+                    "description": "Vapers desechables y cigarrillos electronicos en Espana.",
+                    "email": "info@elvapero.es",
+                    "telephone": "+34 663 167 736",
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "contactType": "customer service",
+                            "email": "info@elvapero.es",
+                            "telephone": "+34 663 167 736",
+                            "availableLanguage": [
+                                "es-ES"
+                            ],
+                            "areaServed": [
+                                "ES"
+                            ]
+                        }
+                    ],
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Spain"
+                    },
+                    "availableLanguage": [
+                        "es-ES"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://vapersmadrid.es/#website",
+                    "name": "VapersMadrid.es",
+                    "url": "https://vapersmadrid.es/",
+                    "inLanguage": "es-ES",
+                    "publisher": {
+                        "@id": "https://vapersmadrid.es/#organization"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://vapersmadrid.es/#breadcrumb",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Inicio",
+                            "item": "https://vapersmadrid.es/"
+                        }
+                    ]
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "https://vapersmadrid.es/#collection-page",
+                    "url": "https://vapersmadrid.es/",
+                    "name": "Vapers Desehables y Cigarrillos Electronicos en Espana",
+                    "description": "Landing page de VapersMadrid.es con vapers desechables destacados, colecciones por marca y recursos de compra.",
+                    "inLanguage": "es-ES",
+                    "isPartOf": {
+                        "@id": "https://vapersmadrid.es/#website"
+                    },
+                    "about": {
+                        "@id": "https://vapersmadrid.es/#organization"
+                    },
+                    "breadcrumb": {
+                        "@id": "https://vapersmadrid.es/#breadcrumb"
+                    },
+                    "mainEntity": {
+                        "@id": "https://vapersmadrid.es/#featured-products"
+                    }
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://vapersmadrid.es/#featured-products",
+                    "name": "Productos destacados y enlazados desde la pagina principal",
+                    "numberOfItems": 10,
+                    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Product",
+                                "name": "VapSolo Triple Pro 60K",
+                                "url": "https://elvapero.es/products/vapsolo-triple-pro-60k-caladas-60000",
+                                "image": "https://vapersmadrid.es/images/products/VapSolo/VapSolo-Triple-Pro-60K-Vaper-Desechable-Cigarrillo-Electronico-60000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Product",
+                                "name": "Fumot Digital Monkey 40K",
+                                "url": "https://elvapero.es/products/fumot-digital-monkey-40k-caladas-40000",
+                                "image": "https://vapersmadrid.es/images/products/Fumot/Fumot-Digital-Monkey-40K-Espana-Vaper-Desechable-40000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Product",
+                                "name": "JNR Mega Box Pro 50K",
+                                "url": "https://elvapero.es/products/jnr-mega-box-pro-50k-caladas-50000",
+                                "image": "https://vapersmadrid.es/images/products/JNR/JNR-Mega-Box-Pro-50K-Espana-Vaper-Desechable-50000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi M-Mecha 16K",
+                                "url": "https://elvapero.es/products/merrymi-m-mecha-16k-caladas-16000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-M-Mecha-16K-Espana-Vaper-Desechable-16000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi Blade 30K",
+                                "url": "https://elvapero.es/products/merrymi-blade-30k-caladas-30000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-Blade-30K-Espana-Vaper-Desechable-30000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 6,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi Kitty 20K",
+                                "url": "https://elvapero.es/products/merrymi-kitty-20k-caladas-20000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-Kitty-20K-Espana-Vaper-Desechable-20000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 7,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi Mecha X 28K",
+                                "url": "https://elvapero.es/products/merrymi-mecha-x-28k-caladas-28000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-Mecha-X-28K-Espana-Vaper-Desechable-28000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 8,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi Mecha Pro 35K",
+                                "url": "https://elvapero.es/products/merrymi-mecha-pro-35k-caladas-35000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-Mecha-Pro-35K-Espana-Vaper-Desechable-35000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 9,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi Panda Pod 66K",
+                                "url": "https://elvapero.es/products/merrymi-panda-pod-66k-caladas-66000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-Panda-Pod-66K-Espana-Vaper-Desechable-66000-Caladas.png"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 10,
+                            "item": {
+                                "@type": "Product",
+                                "name": "MerryMi Panda Twins 40K",
+                                "url": "https://elvapero.es/products/merrymi-panda-twins-40k-caladas-40000",
+                                "image": "https://vapersmadrid.es/images/products/MerryMi/MerryMi-Panda-Twins-40K-Espana-Vaper-Desechable-40000-Caladas.png"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body>
