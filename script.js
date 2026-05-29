@@ -119,16 +119,28 @@ if (warn) {
 }
 
 
-const city = document.getElementById("city");
-const cont = document.querySelectorAll(".foot-cont-three a");
-city.addEventListener("click", toggleCont);
-function toggleCont() {
-    const isActive = city.classList.toggle("active");
-    city.textContent = isActive ? "Ver menos" : "Ver más";
-    Array.from(cont).forEach((el) => {
-        el.style.display = el.style.display === "block" ? "none" : "block";
+document.addEventListener('DOMContentLoaded', function () {
+    const footerGeo = document.querySelector('.footer-geo-accordion');
+    if (!footerGeo) return;
+
+    const toggle = footerGeo.querySelector('.footer-geo-toggle');
+    const cities = footerGeo.querySelector('#footerCities');
+    const icon = footerGeo.querySelector('.footer-geo-icon');
+
+    if (!toggle || !cities) return;
+
+    toggle.addEventListener('click', function () {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        footerGeo.classList.toggle('is-open', !isOpen);
+        cities.hidden = isOpen;
+
+        if (icon) {
+            icon.textContent = isOpen ? '+' : '−';
+        }
     });
-}
+});
 
 const yearSpan = document.querySelector('#year');
 if (yearSpan) {
